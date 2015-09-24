@@ -1,0 +1,26 @@
+---
+title: "cm006 R Markdown"
+author: "Alex Peterson"
+date: "September 24, 2015"
+output: 
+  html_document:
+    keep_md: yes
+    toc: yes
+---
+
+##Section 1
+```{r plot}
+plot(cars)
+```
+
+##Section 2
+```{r stat}
+summary(cars)
+```
+
+##Looking at enrollment data
+
+```{r import}
+enrollment_table <- read.csv("https://gist.githubusercontent.com/jennybc/924fe242a31e0239762f/raw/ea615f4a811a6e9e8a1fe95020a4407785181a21/2015_STAT545_enrollment.csv")
+str(enrollment_table)
+```
